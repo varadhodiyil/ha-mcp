@@ -7,4 +7,4 @@ on:
 
 jobs:
   ci:
-    uses: varadhodiyil/apod-linux/.github/workflows/ci.yml@main
+    uses: ./.github/workflows/build_and_lint.yml

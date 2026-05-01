@@ -6,4 +6,5 @@ on:
     branches: [main]
 
 jobs:
-  uses: varadhodiyil/apod-linux/.github/workflows/ci.yml@main
+  ci:
+    uses: varadhodiyil/apod-linux/.github/workflows/ci.yml@main

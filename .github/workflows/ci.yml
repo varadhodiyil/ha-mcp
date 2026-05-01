@@ -1,0 +1,9 @@
+name: Lint and Test
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [main]
+
+jobs:
+  uses: varadhodiyil/apod-linux/.github/workflows/ci.yml@main

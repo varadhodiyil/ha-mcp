@@ -620,6 +620,7 @@ dependencies = [
     { name = "fastmcp" },
     { name = "python-decouple" },
     { name = "python-dotenv" },
+    { name = "uvicorn" },
 ]
 
 [package.dev-dependencies]
@@ -634,6 +635,7 @@ requires-dist = [
     { name = "fastmcp", specifier = ">=3.2.4" },
     { name = "python-decouple", specifier = ">=3.8" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "uvicorn", specifier = ">=0.44.0" },
 ]
 
 [package.metadata.requires-dev]

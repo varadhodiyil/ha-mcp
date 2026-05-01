@@ -30,7 +30,7 @@ Notes:
 
 ## Install
 
-This project uses `pyproject.toml` (no `requirements.txt` is needed).
+This project uses `pyproject.toml`.
 
 ```bash
 uv sync
@@ -82,7 +82,7 @@ Returns:
 
 - `true` on success, `false` on failure
 
-### Prompt: `tool_first_toggle`
+### Prompt: `tool_description`
 
 A reusable server prompt instructing clients to use the tool-first workflow.
 
@@ -105,8 +105,3 @@ Run type checks (as currently used in this repo):
 uv run ty check .
 ```
 
-## Troubleshooting
-
-- `404 as SSE` at `/`: point client to `/mcp`, not root.
-- `address already in use`: another process is already using port `9000`.
-- Tool returns `false`: verify entity id is valid (for example `light.80`) and token has permission.

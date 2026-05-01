@@ -1,16 +1,16 @@
 lint:
-	uv run ruff check .
-	uv run ruff format --check .
+	uv run ruff check src
+	uv run ruff format --check src
 
 fixup:
-	uv run ruff format .
-	uv run ruff check --fix .
+	uv run ruff format src
+	uv run ruff check --fix src	
 
 type-check:
 	uv run ty check .
 
 run:
-	uv run uvicorrn run main:app
+	uv run uvicorn src.main:app
 
 commit: lint type-check
 	git add .

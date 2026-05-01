@@ -2,7 +2,7 @@
 
 from fastmcp import FastMCP
 
-from ha_connector import DeviceState, get_devices, toggle_state
+from .ha_connector import DeviceState, get_devices, toggle_state
 
 mcp = FastMCP(
     "HA Connector",

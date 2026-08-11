@@ -28,6 +28,7 @@ async def tool_description() -> str:
 @mcp.tool(description="Toggle the state of a device in Home Assistant")
 async def toggle_device(device_id: str, state: DeviceState) -> bool:
     """Toggle the state of a device in Home Assistant."""
+    device_id = f"light.{device_id}" if "light" not in device_id else device_id
     return await toggle_state(device_id, DeviceState(state))
 
 

@@ -56,7 +56,6 @@ async def toggle_state(device_id: str, state: DeviceState) -> bool:
 
 async def main() -> None:
     """Entry point for testing."""
-    await get_devices()
     await toggle_state("light.80", DeviceState.OFF)
 
 
